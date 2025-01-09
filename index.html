@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - [Your Name]</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333; /* Dark gray text for better readability */
+            background-color: #f9f9f9; /* Light background */
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF; /* Blue for links */
+        }
+        a:hover {
+            color: #0056b3; /* Darker blue on hover */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Section */
+        header {
+            background: #343a40; /* Dark gray */
+            color: #f8f9fa; /* Light text */
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.8rem;
+        }
+        header p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Navigation */
+        nav {
+            margin-top: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            font-weight: bold;
+            color: #f8f9fa; /* Light text */
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffc107; /* Gold accent */
+        }
+
+        /* Section Titles */
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: #343a40; /* Dark gray for section titles */
+            margin: 40px 0 20px;
+        }
+
+        /* Experience Section */
+        .experience {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .experience-item {
+            flex: 1 1 calc(33.333% - 20px);
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .experience-item h3 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+            color: #343a40; /* Dark gray for subheadings */
+        }
+        .experience-item p {
+            font-size: 0.9rem;
+            color: #666; /* Medium gray for the text */
+        }
+        .experience-item button {
+            margin-top: 10px;
+            background: #007BFF; /* Blue button */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .experience-item button:hover {
+            background: #0056b3; /* Darker blue on hover */
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #343a40; /* Dark gray */
+            color: #f8f9fa; /* Light text */
+            margin-top: 30px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .experience-item {
+                flex: 1 1 100%;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hi, I'm [Your Name]</h1>
+        <p>Computer Technician | Freelance Cellphone Technician | Problem Solver</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about">
+                <p>I am a dedicated Computer Technician and Freelance Cellphone Technician with years of experience in troubleshooting and repairing hardware and software issues. I am passionate about helping clients solve their technical problems effectively.</p>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience">
+                <div class="experience-item">
+                    <h3>Computer Operator</h3>
+                    <p>Managed and monitored computer systems to ensure smooth operations.</p>
+                    <button onclick="window.location.href='computer-operator.html'">View Details</button>
+                </div>
+                <div class="experience-item">
+                    <h3>Computer Technician</h3>
+                    <p>Diagnosed and repaired hardware and software issues for clients.</p>
+                    <button onclick="window.location.href='computer-technician.html'">View Details</button>
+                </div>
+                <div class="experience-item">
+                    <h3>Freelance Cellphone Technician</h3>
+                    <p>Repaired a variety of mobile devices, including hardware and software solutions.</p>
+                    <button onclick="window.location.href='freelance-cellphone-technician.html'">View Details</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+            <ul>
+                <li>
+                    <p><strong>PC Optimization Guide</strong></p>
+                    <p>(Coming Soon)</p>
+                </li>
+                <li>
+                    <p><strong>Repair Log System</strong></p>
+                    <p>(Coming Soon)</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact">
+                <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
+                <p>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank">linkedin.com/in/yourusername</a></p>
+                <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+    </footer>
+</body>
+</html>
