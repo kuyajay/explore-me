@@ -1,0 +1,88 @@
+ /* Default Navigation (for larger screens) */
+        nav {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            z-index: 1; /* Ensure the nav is on top of other elements */
+        }
+
+        /* Style for individual links */
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.3s;
+        }
+
+        /* Hover effect for links */
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        /* Hamburger menu for small screens */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        /* Hamburger bars styling */
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 4px 0;
+            transition: all 0.3s;
+        }
+
+        /* Mobile Menu */
+        @media (max-width: 768px) {
+            /* Initially hide the menu */
+            nav {
+                display: none; /* This hides the menu */
+                flex-direction: column;
+                background-color: #0078d7;
+                position: absolute;
+                top: 60px;
+                right: 10%;
+                width: 30%;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            /* Show the menu when 'active' class is added */
+            nav.active {
+                display: flex; /* Ensure the menu appears when active class is added */
+            }
+
+            /* Links styling in the mobile menu */
+            nav a {
+                padding: 10px;
+                border-bottom: 1px solid #005bb5;
+            }
+
+            nav a:last-child {
+                border-bottom: none;
+            }
+
+            /* Display hamburger menu on small screens */
+            .hamburger {
+                display: flex;
+            }
+
+            /* Hamburger active state */
+            .hamburger.active div:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+
+            .hamburger.active div:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger.active div:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -5px);
+            }
+        }
